@@ -1,0 +1,6 @@
+$out_root/
+{
+  include libcanvas/
+}
+
+export $out_root/libcanvas/$import.target

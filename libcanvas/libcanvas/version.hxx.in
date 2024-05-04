@@ -1,0 +1,34 @@
+#pragma once
+
+// The numeric version format is AAAAABBBBBCCCCCDDDE where:
+//
+// AAAAA - major version number
+// BBBBB - minor version number
+// CCCCC - bugfix version number
+// DDD   - alpha / beta (DDD + 500) version number
+// E     - final (0) / snapshot (1)
+//
+// When DDDE is not 0, 1 is subtracted from AAAAABBBBBCCCCC. For example:
+//
+// Version      AAAAABBBBBCCCCCDDDE
+//
+// 0.1.0        0000000001000000000
+// 0.1.2        0000000001000020000
+// 1.2.3        0000100002000030000
+// 2.2.0-a.1    0000200001999990010
+// 3.0.0-b.2    0000299999999995020
+// 2.2.0-a.1.z  0000200001999990011
+//
+#define LIBCANVAS_VERSION       $libcanvas.version.project_number$ULL
+#define LIBCANVAS_VERSION_STR   "$libcanvas.version.project$"
+#define LIBCANVAS_VERSION_ID    "$libcanvas.version.project_id$"
+#define LIBCANVAS_VERSION_FULL  "$libcanvas.version$"
+
+#define LIBCANVAS_VERSION_MAJOR $libcanvas.version.major$
+#define LIBCANVAS_VERSION_MINOR $libcanvas.version.minor$
+#define LIBCANVAS_VERSION_PATCH $libcanvas.version.patch$
+
+#define LIBCANVAS_PRE_RELEASE   $libcanvas.version.pre_release$
+
+#define LIBCANVAS_SNAPSHOT_SN   $libcanvas.version.snapshot_sn$ULL
+#define LIBCANVAS_SNAPSHOT_ID   "$libcanvas.version.snapshot_id$"

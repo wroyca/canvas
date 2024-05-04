@@ -1,0 +1,3 @@
+import libs = libcanvas%lib{canvas}
+
+exe{driver}: {hxx ixx txx cxx}{**} $libs testscript{**}
