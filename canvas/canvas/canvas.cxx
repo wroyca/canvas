@@ -63,6 +63,11 @@ main (int argc, char* argv[])
           }
 
         SDL_GL_SwapWindow (window);
+
+        static once_flag flag;
+        call_once(flag, []{
+          canvas::lua_init();
+        });
       }
   }();
 

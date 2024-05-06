@@ -1,6 +1,6 @@
 libs =
 import libs += libcanvas%lib{canvas}
-import libs += libsdl3%lib{sdl3}
+import libs += libsdl%lib{sdl3}
 
 exe{canvas}: {hxx ixx txx cxx mxx}{**} $libs testscript
 

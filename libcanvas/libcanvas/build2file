@@ -1,6 +1,6 @@
 intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
-#import xxxx_libs += libhello%lib{hello}
+import intf_libs += liblua%lib{lua}
 
 lib{canvas}: {hxx ixx txx cxx mxx}{**} $impl_libs $intf_libs
 

@@ -8,6 +8,6 @@ export
     using namespace std;
 
     void
-    say_hello (const string_view& name);
+    lua_init ();
   }
 }
