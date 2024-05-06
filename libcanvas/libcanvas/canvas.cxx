@@ -1,18 +1,10 @@
-#include <libcanvas/canvas.hxx>
-
-#include <ostream>
-#include <stdexcept>
-
-using namespace std;
+module canvas;
 
 namespace canvas
 {
   void
-  say_hello (ostream& o, const string& n)
+  say_hello (const string_view& n)
   {
-    if (n.empty ())
-      throw invalid_argument ("empty name");
-
-    o << "Hello, " << n << '!' << endl;
+    println("hello, {}!", n);
   }
 }

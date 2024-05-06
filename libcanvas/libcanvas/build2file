@@ -2,9 +2,7 @@ intf_libs = # Interface dependencies.
 impl_libs = # Implementation dependencies.
 #import xxxx_libs += libhello%lib{hello}
 
-lib{canvas}: {hxx ixx txx cxx}{** -version} hxx{version} $impl_libs $intf_libs
-
-hxx{version}: in{version} $src_root/manifest
+lib{canvas}: {hxx ixx txx cxx mxx}{**} $impl_libs $intf_libs
 
 # Build options.
 #

@@ -1,0 +1,13 @@
+export module canvas;
+export import std;
+
+export
+{
+  namespace canvas
+  {
+    using namespace std;
+
+    void
+    say_hello (const string_view& name);
+  }
+}

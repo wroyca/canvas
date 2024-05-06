@@ -1,15 +1,15 @@
-#include <iostream>
+import canvas;
 
 int
 main (int argc, char* argv[])
 {
-  using namespace std;
+  using namespace canvas;
 
   if (argc < 2)
     {
-      cerr << "error: missing name" << endl;
+      println (cerr, "error: missing name");
       return 1;
     }
 
-  cout << "Hello, " << argv[1] << '!' << endl;
+  canvas::say_hello (argv[1]);
 }
